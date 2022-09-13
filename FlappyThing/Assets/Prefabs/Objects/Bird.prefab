@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6225027864280684695
+--- !u!1 &7163929998717964595
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6225027864280684683}
-  - component: {fileID: 6225027864280684682}
-  - component: {fileID: 6225027864280684681}
-  - component: {fileID: 6225027864280684680}
-  - component: {fileID: 6225027864280684684}
+  - component: {fileID: 7163929998717964584}
+  - component: {fileID: 7163929998717964599}
+  - component: {fileID: 7163929998717964598}
+  - component: {fileID: 7163929998717964597}
+  - component: {fileID: 7163929998717964596}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Player
@@ -20,27 +20,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6225027864280684683
+--- !u!4 &7163929998717964584
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6225027864280684695}
+  m_GameObject: {fileID: 7163929998717964595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.16, y: 1.61, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.33, y: 1.81, z: 0}
+  m_LocalScale: {x: 0.2731068, y: 0.2731068, z: 0.2731068}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6225027864280684682
+--- !u!212 &7163929998717964599
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6225027864280684695}
+  m_GameObject: {fileID: 7163929998717964595}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: -2413806693520163455, guid: 08b30f6e252edfd42baa8153b10dba9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84b40f94235c02744a8540939016f089, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,14 +85,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &6225027864280684681
+--- !u!50 &7163929998717964598
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6225027864280684695}
+  m_GameObject: {fileID: 7163929998717964595}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -100,19 +100,19 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &6225027864280684680
+--- !u!61 &7163929998717964597
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6225027864280684695}
+  m_GameObject: {fileID: 7163929998717964595}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -123,26 +123,30 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 5.16, y: 6.93}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
---- !u!114 &6225027864280684684
+--- !u!114 &7163929998717964596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6225027864280684695}
+  m_GameObject: {fileID: 7163929998717964595}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc84a7b59f21be64db9909f8be154345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 6
+  jumpForce: 8
+  bird: {fileID: 21300000, guid: 84b40f94235c02744a8540939016f089, type: 3}
+  birdJump: {fileID: 21300000, guid: 496fdfbddc4822744a661f0a5c0123b0, type: 3}
+  birdSound: {fileID: 1812329950571562970, guid: 50e9c5a1a821ba34990de8728718d300, type: 3}
+  jumpSound: {fileID: 8300000, guid: b303e2bb6a2974a47b27b16bf0e2c376, type: 3}
   gameHandler: {fileID: 6384106679392471014, guid: a862700baf99f564daf7e856dcf11bbc, type: 3}

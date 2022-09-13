@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9038372218104884371}
-  - component: {fileID: 7906966150399141580}
+  - component: {fileID: 2563583273123753861}
   m_Layer: 0
   m_Name: Game Handler
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7906966150399141580
+--- !u!114 &2563583273123753861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +40,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6384106679392471014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd88810180822844a804193889a25ba, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb09e12fb817a54da51aaa9dad5aac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  status: menu
   wall: {fileID: 3344253535939472798, guid: 7f0503e682d8cff49a03cc621ef61e24, type: 3}
+  deathSoundImp: {fileID: 5739181554001107966, guid: 12b5181562eb70f4896658a6c9f618e1, type: 3}
+  deathClip: {fileID: 8300000, guid: 331cebd5fa318584fa75bedad6385808, type: 3}
+  canvasImp: {fileID: 8446754113054178711, guid: 101a02ba5326c4c47b46e923197c1ed7, type: 3}
+  textScoreImp: {fileID: 8609136315583982722, guid: 35f9db512f483d4449ece63e26ac7e21, type: 3}
+  menuTitleImp: {fileID: 112655012328168972, guid: 1dd2d575caf12a64bb16ac0a2951c98b, type: 3}
+  menuPanelImp: {fileID: 4244116504070603269, guid: 12bc956c26669904faaec3239d4050ef, type: 3}
+  menuButtonImp: {fileID: 4190354197727135150, guid: 895ac016dc6dbf041a1078aedf72679e, type: 3}
+  gameOverPanelsImp: {fileID: 6070153155620236678, guid: 3211042f5c7b51a4183e82801071ac24, type: 3}
+  gameOverButtonImp: {fileID: 8719599670601468852, guid: a971e22ab83a4c144aa05e82efe20e20, type: 3}
+  score: 0
+  gameOverButton: {fileID: 0}
