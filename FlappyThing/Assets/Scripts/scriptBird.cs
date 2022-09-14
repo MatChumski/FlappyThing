@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class scriptBird : MonoBehaviour
 {
-    
+    // Potencia del salto
     [SerializeField] private int jumpForce = 6;
 
     private Rigidbody2D playerPhysics;
-
     private SpriteRenderer playerSprite;
 
     [SerializeField] private Sprite bird;
@@ -22,7 +21,8 @@ public class scriptBird : MonoBehaviour
     private GameObject handler;
     private scriptGameHandler scriptHandler;
 
-    float timer;
+    private bool firstJump = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,14 +34,19 @@ public class scriptBird : MonoBehaviour
 
         brdSnd.enabled = true;
 
+        // Genera una instancia del Game Handler para enterarse del estado del juego
         handler = Instantiate(gameHandler);
     }
+
+    float timer;
 
     // Update is called once per frame
     void Update()
     {
+        // Extrae el script del handler instanciado
         scriptHandler = handler.GetComponent<scriptGameHandler>();
 
+        // Si está en el menú, va a realizar una animación de salto automática
         if (scriptHandler.status == "menu" && transform.position.y < 0 && timer > 0.5f) 
         {
             Jump();
@@ -51,9 +56,15 @@ public class scriptBird : MonoBehaviour
             timer += Time.deltaTime;
         }
 
+        // Si está jugando, permanece atento a la acción de salto
         if (scriptHandler.status == "play")
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (!firstJump)
+            {
+                Jump();
+                firstJump = true;
+            }
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 Jump();
             }
