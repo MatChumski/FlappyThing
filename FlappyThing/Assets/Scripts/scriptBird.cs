@@ -59,6 +59,10 @@ public class scriptBird : MonoBehaviour
         // Si está jugando, permanece atento a la acción de salto
         if (scriptHandler.status == "play")
         {
+            if (transform.position.y >= 15)
+            {
+                scriptHandler.GameOver(gameObject);
+            }
             if (!firstJump)
             {
                 Jump();
@@ -78,6 +82,8 @@ public class scriptBird : MonoBehaviour
         {
             playerSprite.sprite = bird;
         }
+
+        
     }
 
     void Jump()
